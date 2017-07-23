@@ -1,0 +1,29 @@
+#main {
+    padding-top: 30px
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    min-height: 65px;
+}
+
+.dashboardHeader {
+  background-color: #6a548c;
+}
+
+@media only screen and (max-width: 569px){
+    #img-logo {
+        width: 200px
+    }    
+}
+
+
+
+
+/*
+i[resource-id="2"] {
+    color: red
+}
+
+.availabilityDashboard .availabilityItem .btn {
+    color: red
+}*/

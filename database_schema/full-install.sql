@@ -199,7 +199,7 @@ CREATE TABLE `resources` (
  `min_increment` int,
  `max_duration` int,
  `unit_cost` dec(7,2),
- `autoassign` tinyint(1) unsigned NOT NULL default '1',
+ `autoassign` tinyint(1) unsigned NOT NULL default '0',
  `requires_approval` tinyint(1) unsigned NOT NULL,
  `allow_multiday_reservations` tinyint(1) unsigned NOT NULL default '1',
  `max_participants` mediumint(8) unsigned,

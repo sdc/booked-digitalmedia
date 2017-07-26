@@ -1,11 +1,11 @@
 <?php
 /**
- * @file Shibboleth.config.dist.php
+ * @file Shibboleth.config.php
  *
  * Plugin configuration template.
  *
  * Usage:
- * Copy this file to <code>Shibboleth.config.php</code> and adjust values as applicable.
+ * Adjust values as applicable.
  */
 
 // the key of the external user's identity. mandatory.

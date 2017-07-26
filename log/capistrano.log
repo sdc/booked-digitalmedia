@@ -4109,3 +4109,155 @@ and the repository exists.
   INFO [d37b3a77] Running /usr/bin/env echo "Branch master (at c8b24392b52bca05f922a55764fd0c741de6e6c5) deployed as release 20170726075306 by jameskamradcliffe" >> /srv/booked-digitalmedia/revisions.log as deploy@webdev.southdevon.ac.uk
  DEBUG [d37b3a77] Command: cd /srv/booked-digitalmedia/releases && /usr/bin/env echo "Branch master (at c8b24392b52bca05f922a55764fd0c741de6e6c5) deployed as release 20170726075306 by jameskamradcliffe" >> /srv/booked-digitalmedia/revisions.log
   INFO [d37b3a77] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-07-26 12:56:10 +0100 cap staging deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [9ca47324] Running /usr/bin/env mkdir -p /tmp as deploy@webdev.southdevon.ac.uk
+ DEBUG [9ca47324] Command: /usr/bin/env mkdir -p /tmp
+  INFO [9ca47324] Finished in 6.661 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh 0.0%
+  INFO Uploading /tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh 100.0%
+  INFO [ace4f91b] Running /usr/bin/env chmod 700 /tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh as deploy@webdev.southdevon.ac.uk
+ DEBUG [ace4f91b] Command: /usr/bin/env chmod 700 /tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh
+  INFO [ace4f91b] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [aa2126d1] Running /usr/bin/env git ls-remote git@github.com:sdc/booked-digitalmedia.git HEAD as deploy@webdev.southdevon.ac.uk
+ DEBUG [aa2126d1] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh" ; /usr/bin/env git ls-remote git@github.com:sdc/booked-digitalmedia.git HEAD )
+ DEBUG [aa2126d1] 	942f01a3893438a346db0af4740a8b6536edfeb2	HEAD
+26955cd09d22209318670a54ccd43ba94c3445b6	refs/remotes/origin/HEAD
+  INFO [aa2126d1] Finished in 1.537 seconds with exit status 0 (successful).
+  INFO [ac2663da] Running /usr/bin/env mkdir -p /srv/booked-digitalmedia/shared /srv/booked-digitalmedia/releases as deploy@webdev.southdevon.ac.uk
+ DEBUG [ac2663da] Command: /usr/bin/env mkdir -p /srv/booked-digitalmedia/shared /srv/booked-digitalmedia/releases
+  INFO [ac2663da] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [fcca7851] Running /usr/bin/env mkdir -p /srv/booked-digitalmedia/shared/tpl_c as deploy@webdev.southdevon.ac.uk
+ DEBUG [fcca7851] Command: /usr/bin/env mkdir -p /srv/booked-digitalmedia/shared/tpl_c
+  INFO [fcca7851] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [31ff68d1] Running /usr/bin/env mkdir -p /srv/booked-digitalmedia/shared/config as deploy@webdev.southdevon.ac.uk
+ DEBUG [31ff68d1] Command: /usr/bin/env mkdir -p /srv/booked-digitalmedia/shared/config
+  INFO [31ff68d1] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [d7ab22fe] Running [ -f /srv/booked-digitalmedia/shared/config/config.php ] as deploy@webdev.southdevon.ac.uk
+ DEBUG [d7ab22fe] Command: [ -f /srv/booked-digitalmedia/shared/config/config.php ]
+ DEBUG [d7ab22fe] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-07-26 12:56:23 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fd1b848d] Running /usr/bin/env mkdir -p /tmp as deploy@webdev.southdevon.ac.uk
+ DEBUG [fd1b848d] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fd1b848d] Finished in 5.507 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh 0.0%
+  INFO Uploading /tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh 100.0%
+  INFO [cbcc026a] Running /usr/bin/env chmod 700 /tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh as deploy@webdev.southdevon.ac.uk
+ DEBUG [cbcc026a] Command: /usr/bin/env chmod 700 /tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh
+  INFO [cbcc026a] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [f81752c8] Running /usr/bin/env git ls-remote git@github.com:sdc/booked-digitalmedia.git HEAD as deploy@webdev.southdevon.ac.uk
+ DEBUG [f81752c8] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh" ; /usr/bin/env git ls-remote git@github.com:sdc/booked-digitalmedia.git HEAD )
+ DEBUG [f81752c8] 	942f01a3893438a346db0af4740a8b6536edfeb2	HEAD
+26955cd09d22209318670a54ccd43ba94c3445b6	refs/remotes/origin/HEAD
+  INFO [f81752c8] Finished in 1.233 seconds with exit status 0 (successful).
+  INFO [3df17ced] Running /usr/bin/env mkdir -p /srv/booked-digitalmedia/shared /srv/booked-digitalmedia/releases as deploy@webdev.southdevon.ac.uk
+ DEBUG [3df17ced] Command: /usr/bin/env mkdir -p /srv/booked-digitalmedia/shared /srv/booked-digitalmedia/releases
+  INFO [3df17ced] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [fcceda19] Running /usr/bin/env mkdir -p /srv/booked-digitalmedia/shared/tpl_c as deploy@webdev.southdevon.ac.uk
+ DEBUG [fcceda19] Command: /usr/bin/env mkdir -p /srv/booked-digitalmedia/shared/tpl_c
+  INFO [fcceda19] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [39affb37] Running /usr/bin/env mkdir -p /srv/booked-digitalmedia/shared/config as deploy@webdev.southdevon.ac.uk
+ DEBUG [39affb37] Command: /usr/bin/env mkdir -p /srv/booked-digitalmedia/shared/config
+  INFO [39affb37] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [713045f2] Running [ -f /srv/booked-digitalmedia/shared/config/config.php ] as deploy@webdev.southdevon.ac.uk
+ DEBUG [713045f2] Command: [ -f /srv/booked-digitalmedia/shared/config/config.php ]
+ DEBUG [713045f2] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [2cc1b5b0] Running [ -f /srv/booked-digitalmedia/current/REVISION ] as deploy@webdev.southdevon.ac.uk
+ DEBUG [2cc1b5b0] Command: [ -f /srv/booked-digitalmedia/current/REVISION ]
+ DEBUG [2cc1b5b0] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [6db47bf9] Running /usr/bin/env cat /srv/booked-digitalmedia/current/REVISION 2>/dev/null as deploy@webdev.southdevon.ac.uk
+ DEBUG [6db47bf9] Command: /usr/bin/env cat /srv/booked-digitalmedia/current/REVISION 2>/dev/null
+ DEBUG [6db47bf9] 	c8b24392b52bca05f922a55764fd0c741de6e6c5
+ DEBUG [6db47bf9] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [ab26a619] Running [ -f /srv/booked-digitalmedia/repo/HEAD ] as deploy@webdev.southdevon.ac.uk
+ DEBUG [ab26a619] Command: [ -f /srv/booked-digitalmedia/repo/HEAD ]
+ DEBUG [ab26a619] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /srv/booked-digitalmedia/repo
+ DEBUG [c48bb0ee] Running if test ! -d /srv/booked-digitalmedia/repo; then echo "Directory does not exist '/srv/booked-digitalmedia/repo'" 1>&2; false; fi as deploy@webdev.southdevon.ac.uk
+ DEBUG [c48bb0ee] Command: if test ! -d /srv/booked-digitalmedia/repo; then echo "Directory does not exist '/srv/booked-digitalmedia/repo'" 1>&2; false; fi
+ DEBUG [c48bb0ee] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [addbbc2e] Running /usr/bin/env git remote set-url origin git@github.com:sdc/booked-digitalmedia.git as deploy@webdev.southdevon.ac.uk
+ DEBUG [addbbc2e] Command: cd /srv/booked-digitalmedia/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh" ; /usr/bin/env git remote set-url origin git@github.com:sdc/booked-digitalmedia.git )
+  INFO [addbbc2e] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [ac71e670] Running /usr/bin/env git remote update --prune as deploy@webdev.southdevon.ac.uk
+ DEBUG [ac71e670] Command: cd /srv/booked-digitalmedia/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ac71e670] 	Fetching origin
+ DEBUG [ac71e670] 	From github.com:sdc/booked-digitalmedia
+   c8b2439..942f01a  master     -> master
+  INFO [ac71e670] Finished in 1.604 seconds with exit status 0 (successful).
+ DEBUG [f753a813] Running if test ! -d /srv/booked-digitalmedia/repo; then echo "Directory does not exist '/srv/booked-digitalmedia/repo'" 1>&2; false; fi as deploy@webdev.southdevon.ac.uk
+ DEBUG [f753a813] Command: if test ! -d /srv/booked-digitalmedia/repo; then echo "Directory does not exist '/srv/booked-digitalmedia/repo'" 1>&2; false; fi
+ DEBUG [f753a813] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [fe716c3e] Running /usr/bin/env mkdir -p /srv/booked-digitalmedia/releases/20170726115629 as deploy@webdev.southdevon.ac.uk
+ DEBUG [fe716c3e] Command: cd /srv/booked-digitalmedia/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh" ; /usr/bin/env mkdir -p /srv/booked-digitalmedia/releases/20170726115629 )
+  INFO [fe716c3e] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [4f48f24a] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/booked-digitalmedia/releases/20170726115629 as deploy@webdev.southdevon.ac.uk
+ DEBUG [4f48f24a] Command: cd /srv/booked-digitalmedia/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/booked-digitalmedia/releases/20170726115629 )
+  INFO [4f48f24a] Finished in 0.294 seconds with exit status 0 (successful).
+ DEBUG [f44935ea] Running if test ! -d /srv/booked-digitalmedia/repo; then echo "Directory does not exist '/srv/booked-digitalmedia/repo'" 1>&2; false; fi as deploy@webdev.southdevon.ac.uk
+ DEBUG [f44935ea] Command: if test ! -d /srv/booked-digitalmedia/repo; then echo "Directory does not exist '/srv/booked-digitalmedia/repo'" 1>&2; false; fi
+ DEBUG [f44935ea] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [9a01e289] Running /usr/bin/env git rev-list --max-count=1 master as deploy@webdev.southdevon.ac.uk
+ DEBUG [9a01e289] Command: cd /srv/booked-digitalmedia/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-booked-digitalmedia-staging-jameskamradcliffe.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [9a01e289] 	942f01a3893438a346db0af4740a8b6536edfeb2
+ DEBUG [9a01e289] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [d806c131] Running if test ! -d /srv/booked-digitalmedia/releases/20170726115629; then echo "Directory does not exist '/srv/booked-digitalmedia/releases/20170726115629'" 1>&2; false; fi as deploy@webdev.southdevon.ac.uk
+ DEBUG [d806c131] Command: if test ! -d /srv/booked-digitalmedia/releases/20170726115629; then echo "Directory does not exist '/srv/booked-digitalmedia/releases/20170726115629'" 1>&2; false; fi
+ DEBUG [d806c131] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [af54a9c9] Running /usr/bin/env echo "942f01a3893438a346db0af4740a8b6536edfeb2" >> REVISION as deploy@webdev.southdevon.ac.uk
+ DEBUG [af54a9c9] Command: cd /srv/booked-digitalmedia/releases/20170726115629 && /usr/bin/env echo "942f01a3893438a346db0af4740a8b6536edfeb2" >> REVISION
+  INFO [af54a9c9] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [a90d4d93] Running /usr/bin/env mkdir -p /srv/booked-digitalmedia/releases/20170726115629/config as deploy@webdev.southdevon.ac.uk
+ DEBUG [a90d4d93] Command: /usr/bin/env mkdir -p /srv/booked-digitalmedia/releases/20170726115629/config
+  INFO [a90d4d93] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [33bb2b80] Running [ -L /srv/booked-digitalmedia/releases/20170726115629/config/config.php ] as deploy@webdev.southdevon.ac.uk
+ DEBUG [33bb2b80] Command: [ -L /srv/booked-digitalmedia/releases/20170726115629/config/config.php ]
+ DEBUG [33bb2b80] Finished in 0.005 seconds with exit status 1 (failed).
+ DEBUG [000be5ad] Running [ -f /srv/booked-digitalmedia/releases/20170726115629/config/config.php ] as deploy@webdev.southdevon.ac.uk
+ DEBUG [000be5ad] Command: [ -f /srv/booked-digitalmedia/releases/20170726115629/config/config.php ]
+ DEBUG [000be5ad] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [e6de6e22] Running /usr/bin/env rm /srv/booked-digitalmedia/releases/20170726115629/config/config.php as deploy@webdev.southdevon.ac.uk
+ DEBUG [e6de6e22] Command: /usr/bin/env rm /srv/booked-digitalmedia/releases/20170726115629/config/config.php
+  INFO [e6de6e22] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [ccd8ac5c] Running /usr/bin/env ln -s /srv/booked-digitalmedia/shared/config/config.php /srv/booked-digitalmedia/releases/20170726115629/config/config.php as deploy@webdev.southdevon.ac.uk
+ DEBUG [ccd8ac5c] Command: /usr/bin/env ln -s /srv/booked-digitalmedia/shared/config/config.php /srv/booked-digitalmedia/releases/20170726115629/config/config.php
+  INFO [ccd8ac5c] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [3b56a654] Running /usr/bin/env mkdir -p /srv/booked-digitalmedia/releases/20170726115629 as deploy@webdev.southdevon.ac.uk
+ DEBUG [3b56a654] Command: /usr/bin/env mkdir -p /srv/booked-digitalmedia/releases/20170726115629
+  INFO [3b56a654] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [302c7350] Running [ -L /srv/booked-digitalmedia/releases/20170726115629/tpl_c ] as deploy@webdev.southdevon.ac.uk
+ DEBUG [302c7350] Command: [ -L /srv/booked-digitalmedia/releases/20170726115629/tpl_c ]
+ DEBUG [302c7350] Finished in 0.005 seconds with exit status 1 (failed).
+ DEBUG [2165fc63] Running [ -d /srv/booked-digitalmedia/releases/20170726115629/tpl_c ] as deploy@webdev.southdevon.ac.uk
+ DEBUG [2165fc63] Command: [ -d /srv/booked-digitalmedia/releases/20170726115629/tpl_c ]
+ DEBUG [2165fc63] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [86c0e71a] Running /usr/bin/env rm -rf /srv/booked-digitalmedia/releases/20170726115629/tpl_c as deploy@webdev.southdevon.ac.uk
+ DEBUG [86c0e71a] Command: /usr/bin/env rm -rf /srv/booked-digitalmedia/releases/20170726115629/tpl_c
+  INFO [86c0e71a] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [f65e19b5] Running /usr/bin/env ln -s /srv/booked-digitalmedia/shared/tpl_c /srv/booked-digitalmedia/releases/20170726115629/tpl_c as deploy@webdev.southdevon.ac.uk
+ DEBUG [f65e19b5] Command: /usr/bin/env ln -s /srv/booked-digitalmedia/shared/tpl_c /srv/booked-digitalmedia/releases/20170726115629/tpl_c
+  INFO [f65e19b5] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [89cd7e46] Running /usr/bin/env ln -s /srv/booked-digitalmedia/releases/20170726115629 /srv/booked-digitalmedia/releases/current as deploy@webdev.southdevon.ac.uk
+ DEBUG [89cd7e46] Command: /usr/bin/env ln -s /srv/booked-digitalmedia/releases/20170726115629 /srv/booked-digitalmedia/releases/current
+  INFO [89cd7e46] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [d65a6005] Running /usr/bin/env mv /srv/booked-digitalmedia/releases/current /srv/booked-digitalmedia as deploy@webdev.southdevon.ac.uk
+ DEBUG [d65a6005] Command: /usr/bin/env mv /srv/booked-digitalmedia/releases/current /srv/booked-digitalmedia
+  INFO [d65a6005] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [8fd578c2] Running /usr/bin/env ls -x /srv/booked-digitalmedia/releases as deploy@webdev.southdevon.ac.uk
+ DEBUG [8fd578c2] Command: /usr/bin/env ls -x /srv/booked-digitalmedia/releases
+ DEBUG [8fd578c2] 	20170726074930	20170726074944	20170726075000	20170726075230	20170726075306
+20170726115629
+ DEBUG [8fd578c2] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on webdev.southdevon.ac.uk
+  INFO [d27e742c] Running /usr/bin/env rm -rf /srv/booked-digitalmedia/releases/20170726074930 as deploy@webdev.southdevon.ac.uk
+ DEBUG [d27e742c] Command: /usr/bin/env rm -rf /srv/booked-digitalmedia/releases/20170726074930
+  INFO [d27e742c] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [b258aaf9] Running if test ! -d /srv/booked-digitalmedia/releases; then echo "Directory does not exist '/srv/booked-digitalmedia/releases'" 1>&2; false; fi as deploy@webdev.southdevon.ac.uk
+ DEBUG [b258aaf9] Command: if test ! -d /srv/booked-digitalmedia/releases; then echo "Directory does not exist '/srv/booked-digitalmedia/releases'" 1>&2; false; fi
+ DEBUG [b258aaf9] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [211d6ac5] Running /usr/bin/env echo "Branch master (at 942f01a3893438a346db0af4740a8b6536edfeb2) deployed as release 20170726115629 by jameskamradcliffe" >> /srv/booked-digitalmedia/revisions.log as deploy@webdev.southdevon.ac.uk
+ DEBUG [211d6ac5] Command: cd /srv/booked-digitalmedia/releases && /usr/bin/env echo "Branch master (at 942f01a3893438a346db0af4740a8b6536edfeb2) deployed as release 20170726115629 by jameskamradcliffe" >> /srv/booked-digitalmedia/revisions.log
+  INFO [211d6ac5] Finished in 0.006 seconds with exit status 0 (successful).

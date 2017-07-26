@@ -98,10 +98,13 @@ class WebAuthentication implements IWebAuthentication
 	 */
 	public function Validate($username, $password)
 	{
+/*      JKR - 26/07/2017
+        This statement, for some reason prevents Shibboleth user logging in        
 		if (empty($password) && !$this->authentication->AreCredentialsKnown())
 		{
 			return false;
 		}
+*/
 
 		return $this->authentication->Validate($username, $password);
 	}

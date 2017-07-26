@@ -87,14 +87,11 @@ class Authentication implements IAuthentication
 
 	public function Validate($username, $password)
 	{
-/*      JKR - 26/07/2017
-        This statement, for some reason prevents Shibboleth user logging in
-
         if (($this->ShowUsernamePrompt() && empty($username)) || ($this->ShowPasswordPrompt() && empty($password)))
 		{
 			return false;
 		}
-*/
+
 		Log::Debug('Trying to log in as: %s', $username);
 
 		$command = new AuthorizationCommand($username);

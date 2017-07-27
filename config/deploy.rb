@@ -3,11 +3,11 @@ lock "3.8.2"
 
 set :application, "booked-digitalmedia"
 set :repo_url, "git@github.com:sdc/booked-digitalmedia.git"
-set :branch, "master"
 set :keep_releases, 5
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+set :branch, "master"
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/srv/booked-digitalmedia"

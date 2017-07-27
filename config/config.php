@@ -28,20 +28,12 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
 $conf['settings']['app.title'] = 'Booked Scheduler';			// application title
 $conf['settings']['default.timezone'] = 'America/Chicago';      // look up here http://php.net/manual/en/timezones.php
 $conf['settings']['allow.self.registration'] = 'true';         	// if users can register themselves
-<<<<<<< HEAD
-$conf['settings']['admin.email'] = '';         // email address of admin user
-=======
 $conf['settings']['admin.email'] = 'jameskamradcliffe@southdevon.ac.uk';         // email address of admin user
->>>>>>> c8b24392b52bca05f922a55764fd0c741de6e6c5
 $conf['settings']['admin.email.name'] = 'Booked Administrator';	// name to be used in From: field when sending automatic emails
 $conf['settings']['default.page.size'] = '50';                  // number of records per page
 $conf['settings']['enable.email'] = 'true';                     // global configuration to enable if any emails will be sent
 $conf['settings']['default.language'] = 'en_us';                // find your language in the lang directory
-<<<<<<< HEAD
-$conf['settings']['script.url'] = 'http://localhost/';   	// public URL to the Web directory of this instance. this is the URL that appears when you are logging in. leave http: or https: off to auto-detect
-=======
 $conf['settings']['script.url'] = 'http://localhost/booked-digitalmedia/Web';   	// public URL to the Web directory of this instance. this is the URL that appears when you are logging in. leave http: or https: off to auto-detect
->>>>>>> c8b24392b52bca05f922a55764fd0c741de6e6c5
 $conf['settings']['image.upload.directory'] = 'Web/uploads/images'; // full or relative path to where images will be stored
 $conf['settings']['image.upload.url'] = 'uploads/images';       // full or relative path to show uploaded images from
 $conf['settings']['cache.templates'] = 'true';                  // true recommended, caching template files helps web pages render faster
@@ -114,14 +106,10 @@ $conf['settings']['uploads']['reservation.attachment.extensions'] = 'txt,jpg,gif
  * Database configuration
  */
 $conf['settings']['database']['type'] = 'mysql';
-<<<<<<< HEAD
-$conf['settings']['database']['user'] = '';        // database user with permission to the booked database
-=======
 $conf['settings']['database']['user'] = 'james';        // database user with permission to the booked database
->>>>>>> c8b24392b52bca05f922a55764fd0c741de6e6c5
-$conf['settings']['database']['password'] = '';
-$conf['settings']['database']['hostspec'] = '127.0.0.1';        // ip, dns or named pipe
-$conf['settings']['database']['name'] = '';
+$conf['settings']['database']['password'] = 'myte5tp@55w0rd';
+$conf['settings']['database']['hostspec'] = 'localhost';        // ip, dns or named pipe
+$conf['settings']['database']['name'] = 'booked_dm';
 /**
  * Mail server configuration
  */
@@ -146,7 +134,7 @@ $conf['settings']['plugins']['PostReservation'] = '';
 /**
  * Installation settings
  */
-$conf['settings']['install.password'] = '';
+$conf['settings']['install.password'] = '1n5t@11p@55w0rd';
 /**
  * Pages
  */

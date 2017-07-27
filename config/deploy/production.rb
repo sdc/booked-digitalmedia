@@ -59,4 +59,4 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-role :web, %w{deploy@webdev.southdevon.ac.uk}
+role :web, %w{deploy@mobiledevices.southdevon.ac.uk}

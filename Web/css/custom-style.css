@@ -1,3 +1,7 @@
+body {
+    background-color: #F1EBFF
+}
+
 #main {
     padding-top: 30px
 }
@@ -6,8 +10,17 @@
     min-height: 65px;
 }
 
-.dashboardHeader {
+.dashboardHeader, .btn-primary , .btn-success {
   background-color: #6a548c;
+}
+
+.btn-success {
+    border-color: #2b2d41
+}
+
+.btn-primary:hover, .btn-success:hover {
+    background-color: #705485;
+    border-color: #2b2d41
 }
 
 @media only screen and (max-width: 569px){

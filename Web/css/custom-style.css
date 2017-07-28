@@ -10,15 +10,17 @@ body {
     min-height: 65px;
 }
 
-.dashboardHeader, .btn-primary , .btn-success {
+.dashboardHeader, .btn-primary{
   background-color: #6a548c;
 }
 
+/*
 .btn-success {
     border-color: #2b2d41
 }
+*/
 
-.btn-primary:hover, .btn-success:hover {
+.btn-primary:hover{
     background-color: #705485;
     border-color: #2b2d41
 }
